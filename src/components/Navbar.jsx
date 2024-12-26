@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <>
-    <div className='navbar'>
+    <div classNameName='navbar'>
       <h2>Todo App</h2>
     </div>
     </>
