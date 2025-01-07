@@ -25,6 +25,7 @@ function List({ task, toggleCompletion, deleteTodo }) {
       >
         {task.task}
       </span>
+      <div className='btn-checkbox'>
       <input
         type="checkbox"
         className="task-checkbox"
@@ -37,6 +38,7 @@ function List({ task, toggleCompletion, deleteTodo }) {
         >
           Delete
         </button>
+      </div>
     </div>
   );
 }
