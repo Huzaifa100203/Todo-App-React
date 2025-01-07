@@ -41,9 +41,9 @@ function App() {
   };
 
   return (
-    <div classNameName="main-container">
+    <div className="main-container">
       <Navbar />
-      <div classNameName="container">
+      <div className="container">
         <Form addTodo={addTodo} />
       
         {tasks.map((task) => (

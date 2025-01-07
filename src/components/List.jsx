@@ -19,20 +19,20 @@ import React from 'react';
 
 function List({ task, toggleCompletion, deleteTodo }) {
   return (
-    <div classNameName="task-item">
+    <div className="task-item">
       <span
-        classNameName={`task-text ${task.isCompleted ? 'completed' : ''}`} // Apply "completed" className if task.isCompleted is true
+        className={`task-text ${task.isCompleted ? 'completed' : ''}`} // Apply "completed" className if task.isCompleted is true
       >
         {task.task}
       </span>
       <input
         type="checkbox"
-        classNameName="task-checkbox"
+        className="task-checkbox"
         checked={task.isCompleted} // Dynamically check or uncheck based on task.isCompleted
         onChange={() => toggleCompletion(task.id)} // Call toggleCompletion when checkbox is toggled
       />
        <button
-          classNameName="delete-btn"
+          className="delete-btn"
           onClick={() => deleteTodo(task.id)} // Call deleteTask when the button is clicked
         >
           Delete
